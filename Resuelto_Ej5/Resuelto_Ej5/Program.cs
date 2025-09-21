@@ -7,7 +7,6 @@
             // Creación de arreglo de máquinas virtuales:
             MaquinaVirtual[] maquinas = new MaquinaVirtual[4];
 
-
             // las 2 de procesamiento:
             maquinas[0] = new Procesamiento("Proc1", "v1.0", "Linux", "DB_origen1", "DB_fin1");
             maquinas[1] = new Procesamiento("Proc2", "v1.1", "Windows", "DB_origen2", "DB_fin2");
