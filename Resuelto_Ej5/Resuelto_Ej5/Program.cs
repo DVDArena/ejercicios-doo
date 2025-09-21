@@ -19,7 +19,7 @@
             Console.WriteLine("=== Levantando Máquinas ===");
             foreach (MaquinaVirtual m in maquinas)
             {
-                Console.WriteLine("dar acceso a la base de datos?");
+                Console.WriteLine("Dar acceso a la base de datos?");
                 string respuesta = Console.ReadLine();
                 if (respuesta == "si")
                 {
