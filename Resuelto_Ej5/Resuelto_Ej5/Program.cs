@@ -115,12 +115,26 @@
             base.MostrarInfo();
             Console.WriteLine("Origen: " + this.DatosOrigen + ", Fin: " + this.DatosFin);
         }
+
+        public void Clonar()
+        {
+            Console.WriteLine("Clonando datos desde " + this.DatosOrigen);
+        }
+
+        public void Filtrar()
+        {
+            Console.WriteLine("Filtrando datos...");
+        }
+
+        public void Almacenar()
+        {
+            Console.WriteLine("Almacenando datos en " + this.DatosFin);
+        }
     }
 
     // Clase hija Aplicacion
     class Aplicacion : MaquinaVirtual
     {
-        
         //Atributos:
         public string Lenguaje;
         public string VersionLenguaje;
@@ -139,7 +153,7 @@
             this.BaseDatos = baseDatos;
         }
 
-        //Métodos
+        //Métodos:
         public override void Levantar()
         {
             this.Estado = 1;
@@ -155,5 +169,13 @@
                               ", Versión Lenguaje: " + this.VersionLenguaje +
                               ", Base de datos: " + this.BaseDatos);
         }
+
+        public void Publicar()
+        {
+            Console.WriteLine("Publicando aplicación en " + this.SistemaOperativo +
+                              " con lenguaje " + this.Lenguaje + "...");
+        }
     }
+
 }
+    
